@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos Gerais */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF9548;
+  gap:1rem;
+  z-index:1;
+  box-shadow: 1px 1px 1px rgb(105, 105, 105);
+}
+.logo{
+  display: block;
+  position: relative;
+  right: 40px;
+  max-width: 300px;
+  margin-left:50px ;
+  margin-bottom: 0.5rem;
+  bottom: 1rem;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.busca{
+  display: block;
+  align-items: center;
+  position: relative;
+  margin: 1rem 0;
+  top: .5rem;
+}
+#buscar{
+  width: 564px;
+  height: 42px;
+  border-radius: 5px;
+  border-color: black;
+  padding: 0 10px;
+}
+.menu{
+  display: inline-block;
+  position: relative;
+  top: .9rem;
+  padding: 0 .5rem;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: .7rem;
+  background-color: #FF9548;
+  border-bottom-left-radius: 5px ;
+  border-bottom-right-radius: 5px ;
+  min-width: 160px;
+  box-shadow: 1px 8px 16px  rgb(0,0,0,0.2);
+  
+}
+.dropdown-content a{
+  position: absolute;
+  text-align: start;
+  white-space: nowrap;
+  top: .1rem;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+.dropdown-content a:hover{
+  background-color: #f6b17fa5;
+  transition: .5s;
+}
+.menu:hover .dropdown-content{
+  display: block;
+}
+.dropdown-content2{
+  display: none;
+  position: absolute;
+  top: .7rem;
+  background-color: #FF9548;
+  border-bottom-left-radius: 5px ;
+  border-bottom-right-radius: 5px ;
+  min-width: 160px;
+  box-shadow: 1px 8px 16px  rgb(0,0,0,0.2);
+}
+.dropdown-content2 a{
+  position: absolute;
+  top: .1rem;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+.dropdown-content2 a:hover{
+  background-color: #f3a9742e; 
+  transition: .5s;
+}
+.menu:hover .dropdown-content2{
+  display: flex;
+}
+.text-left{
+  text-align: left;
+}
+.p-6{
+  padding: 1.4rem
+}
+.flex{
+  display: flex;
+}
+.w-32{
+  width: 5rem;
+}
+.items-start{
+  align-items: flex-start;
+}
+.flex-col{
+  flex-direction: column;
+}
+.flex{
+  display: flex;
+}
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+div{
+  display: block;
+}
+
+.menu a{
+  color: black;
+  position: relative;
+  bottom:1.1rem;
+  font-weight: bold;
+  gap: .5rem;
+}
+#botao{
+  display: block;
+  position: relative;
+  left: 26.3rem;
+  bottom: 40.1px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif
+}
+#botao[type=button]{
+  padding: 9.9px 50.3px;
+  background-color: black;
+  border-end-end-radius:.2rem;
+  border-start-end-radius: .2rem ;
+  border-end-start-radius:.4rem ;
+}
+.entre{
+  display: flex;
+  position: relative;
+  bottom: 1.3rem;
+  padding: 10px 20px;
+  border-radius:.2rem;
+  right: .2rem;
+  background-color: black;
+}
+a{
+  display: flex;
+  line-break: .1rem;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.carousel-container{
+  width: 300%;
+  overflow: hidden;
+  position: relative;
+}
+.slide{
+  display: inline-block;
+  width: 300px;
+}
+.slide img{
+  width: 100%;
+  height: auto;
+}
+button{
+  margin: 10px;
+}
+.conteudo2{
+  display: block;
+  margin-top: 10rem;
+  padding-top: 20rem;
+  justify-content: center;
+
+}
+h2{
+  display: flex;
+  padding-bottom: rem;
+
+}
+.categorias{
+  display: flex;
+  position: relative;
+  align-items: center;
+  right: .2rem;
+  gap: .5rem;
+}
+.categorias a{
+  display: flex;
+  padding: .6rem .5rem;
+  background-color:rgb(0, 0, 0);
+  box-shadow: 4px 4px 4px rgb(35, 30, 30);
+}
