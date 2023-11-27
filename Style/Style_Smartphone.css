@@ -1,0 +1,602 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilos Gerais */
+header{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #FF9548;
+gap:1rem;
+z-index:1;
+box-shadow: 1px 1px 1px rgb(105, 105, 105);
+}
+.logo{
+display: block;
+position: relative;
+right: 40px;
+max-width: 300px;
+margin-left:50px ;
+margin-bottom: 0.5rem;
+}
+
+.nav{
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+.busca{
+display: block;
+align-items: center;
+position: relative;
+margin: 1rem 0;
+top: 1.5rem;
+}
+#buscar{
+display: block;
+width: 567px;
+height: 42px;
+border-radius: 5px;
+border-color: black;
+padding: 0 10px;
+}
+@media(max-width:1060px){
+#buscar{
+  width: 500px;
+}
+}
+
+.menu{
+display: inline-block;
+position: relative;
+top: -1rem;
+z-index: 1;
+}
+.dropdown-content{
+display: none;
+position: absolute;
+background-color: #FF9548;
+border-bottom-left-radius: 5px ;
+border-bottom-right-radius: 5px ;
+min-width: 160px;
+box-shadow: 1px 8px 16px  rgb(0,0,0,0.2);
+
+}
+.dropdown-content a{
+position: absolute;
+text-align: start;
+white-space: nowrap;
+top: .1rem;
+padding: 20px 30px;
+text-decoration: none;
+font-size: 14px;
+line-height: 20px;
+font-family: Arial, Helvetica, sans-serif;
+display: block;
+}
+.dropdown-content a:hover{
+background-color: #f6b17fa5;
+transition: .5s;
+}
+.menu:hover .dropdown-content{
+display: block;
+}
+.dropdown-content2{
+display: none;
+position: absolute;
+background-color: #FF9548;
+border-bottom-left-radius: 5px ;
+border-bottom-right-radius: 5px ;
+min-width: 160px;
+box-shadow: 1px 8px 16px  rgb(0,0,0,0.2);
+}
+.dropdown-content2 a{
+position: absolute;
+top: .1rem;
+padding: 4px;
+text-decoration: none;
+font-size: 14px;
+font-family: Arial, Helvetica, sans-serif;
+display: block;
+}
+.dropdown-content2 a:hover{
+background-color: #f3a9742e; 
+transition: .5s;
+}
+.menu:hover .dropdown-content2{
+display: flex;
+}
+.text-left{
+text-align: left;
+}
+.p-6{
+padding: 1.4rem
+}
+.flex{
+display: flex;
+}
+.w-32{
+width: 5rem;
+}
+.items-start{
+align-items: flex-start;
+}
+.flex-col{
+flex-direction: column;
+}
+.flex{
+display: flex;
+}
+.mb-6{
+margin-bottom: 1.5rem;
+}
+div{
+display: block;
+}
+
+.menu a{
+color: black;
+position: relative;
+font-weight: bold;
+gap: .8rem;
+}
+
+#botao{
+display: block;
+position: relative;
+left: 26.3rem;
+bottom: 40.1px;
+color: white;
+font-family: Arial, Helvetica, sans-serif
+}
+@media(max-width:1060px){
+#botao{
+  left: 22.1rem;
+}
+}
+
+#botao[type=button]{
+padding: 9.9px 50.3px;
+background-color: black;
+border-end-end-radius:.2rem;
+border-start-end-radius: .2rem ;
+border-end-start-radius:.4rem ;
+}
+.entre{
+display: flex;
+position: relative;
+bottom: .3rem;
+padding: 13px 40px;
+border-radius: 4rem;
+right: .2rem;
+background-color: black;
+}
+a{
+display: flex;
+line-break: .1rem;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+button{
+margin: 10px;
+}
+.conteudo2{
+display: block;
+margin-top: 10rem;
+padding-top: 20rem;
+justify-content: center;
+}
+/* produto */
+.links_hori{
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  align-items: center;
+  text-align: center;
+}
+.link_canto_esq{
+  display: inline-flex;
+  gap: .5rem;
+  position: relative;
+  margin-right: 190px;
+}
+.link_canto_esq a, .link_Canto_dir  a{
+  color: black;
+  gap: .5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.link_canto_esq  a{
+  font-weight: 550 ;
+}
+
+.links_hori .cor_link_claro{
+  color: rgb(172, 172, 172);
+  font-weight: 100;
+}
+
+.link_canto_esq a:hover {
+  text-decoration:underline;
+}
+.link_Canto_dir{
+  display: inline-flex;
+  gap: .5rem;
+  margin-left: 190px;
+}
+.prod_iphone h1{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-right: 590px;
+  margin-top: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 750;
+}
+.star_avaliacao{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-right: 735px;
+  margin-top: 19px;
+  gap: 1rem;
+}
+
+.star_avaliacao a{
+  display: inline-flex;
+  color: rgba(211, 211, 1, 0.621);
+}
+
+.star_avaliacao a h3{
+  color: black;
+  font-weight: 100;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.iphone{
+  position: relative;
+  background-color: rgb(241, 241, 237);
+  right: 300px;
+  height: 250px;
+  width: 400px;
+  margin: auto;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+
+.iphone img{
+  display: flex;
+  position: relative;
+  margin: auto;
+  width: 62%;
+}
+.container_bottom{
+  display:flex;
+}
+.quadrado{
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  align-items: center;
+  border-radius: .4rem;
+  text-align: center;
+  margin-top: .5rem;
+  right: 2rem;
+  width: 90px;
+  padding: .5rem;
+  background-color: rgb(241, 241, 237);
+}
+.quadrado:hover{
+  background-color: rgb(184, 184, 181);
+  transition: .5s;
+}
+
+.img_img{
+  display: block;
+  position: relative;
+  margin: auto;
+  align-items: center;
+}
+
+iframe{
+  border-radius: 1rem;
+}
+
+.botao_container{
+  display: flex;
+}
+.container_bottom a span > i { 
+  font-size:30px;
+}
+.anterior{
+  cursor: pointer;
+}
+.proximo{
+  display: flex;
+  position: relative;
+  left:21rem;
+  cursor: pointer;
+}
+
+.detalhes{
+  display: block;
+  position: relative;
+  top: -18rem;
+  left: 25rem;
+  margin-left: 16px;
+}
+.detalhes a{
+  display:block ;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.detalhes p{
+  padding-bottom: 1rem;
+}
+
+.via{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.via d{
+  color: green;
+}
+.money{
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  font-size: 40px;
+}
+.detalhes .btt{
+  background-color: black;
+  padding: 15px;
+  text-align: center; 
+  color: white;
+  width: 330px;
+  border-radius: 5px;
+}
+
+.detalhes .btt:hover{
+  background-color: rgb(58, 57, 57);
+  transition: .5s;
+}
+
+.linha-button{
+  position: relative;
+  right: 24px;
+  margin-top: 1rem;
+  width: 20.7rem;
+}
+
+/* Fichas, Comparador, Prós */
+.nav-fichas{
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(67, 67, 67);
+}
+.menu_nav{
+  display: inline-flex;
+
+}
+
+.menu_nav ul{
+  display: flex;
+  list-style: none;
+  gap: 6rem;
+}
+
+.menu_nav ul li a{
+  color: black;
+  padding: .6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu_nav ul li .cor_laranja{
+  border-bottom: 4px solid #FF9548
+}
+
+.comparador{
+  display: flex;
+  padding-top: 4rem;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.container_produto{
+  display: block;
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+}
+.img_pro_container{
+  display: inline-flex;
+  position: relative;
+  right: 13rem;
+  gap: 1.5rem;
+}
+.container_produto_prod{
+  display: inline-flex;
+  border: 1px solid #FF9548;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 0 230px;
+  gap: 1rem;
+  padding-bottom: 10rem;
+}
+
+.container_produto_prod a{
+  display: flex;
+  color: black;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top: 2rem;
+}
+
+.botao_logo{
+  display: flex;
+  position: relative;
+  left: 13rem;
+  gap: 1rem;
+}
+
+.botao_logo, .botao_logo_container{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.botao_logo_container{
+  display: flex;
+  border: 2px solid black;
+  cursor: pointer;
+  position: relative;
+  border-radius: 12px;
+  background-color: #FF9548;
+  font-weight: 900;
+  color: white;
+  padding: 1rem 4rem;
+}
+.botao_logo  img{
+  padding: 30px;
+  background-color: #c7c3c0;
+  border-radius: 40px;
+  background-image: url(../Imagens/Logo_trocafy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 55px; 
+  background-position: center;
+}
+.botao_logo a{
+  display: flex;
+  position: relative;
+  gap: .5rem;
+}
+.container_produto_prod .money_container{
+  font-size: 20px;
+}
+
+ /* RodaPé */
+.rodape{
+  display: block;
+  max-width: 100%;
+  box-shadow: 2px 2px 2px rgb(105, 105, 105);
+  background-color: #0c0c0cf8;
+}
+
+.categorias_rodape{
+  display: flex;
+  padding-top:2rem;
+  justify-content: space-around;
+}
+
+.links_rodape{
+  display: block;
+}
+
+.destaques h1, .O-DD h1, .botao-duvidas h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-bottom: 10px;
+  color: #ff9448;
+  font-weight: bold;
+}
+
+.categorias_rodape  a{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+.botao-duvidas a{
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #FF9548;
+}
+.botao-duvidas h1{
+  align-items: center;
+  text-align: center;
+}
+
+hr{
+  margin: 0 auto;
+  text-align: center;
+  width: 77%;
+}
+
+.rodape .meio h1{
+  display: flex;
+  justify-content: center;
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+.meio p{
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.rede {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 30px;
+  margin-top: 90px;
+}
+.bi-facebook:hover{
+  color: blue;
+}
+
+.bi-twitter-x:hover{
+  color: rgb(68, 67, 67);
+}
+
+.bi-instagram:hover{
+  color:rgb(187, 46, 152);
+}
+
+.bi-youtube:hover{
+  color: red;
+}
+.bi-android2:hover{
+  color: rgb(72, 235, 72);
+}
+
+.bi-apple:hover{
+  color: lightgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
