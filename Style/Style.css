@@ -43,6 +43,12 @@ header{
   border-color: black;
   padding: 0 10px;
 }
+@media(max-width:1060px){
+  #buscar{
+    width: 500px;
+  }
+}
+
 .menu{
   display: inline-block;
   position: relative;
@@ -148,6 +154,12 @@ div{
   color: white;
   font-family: Arial, Helvetica, sans-serif
 }
+@media(max-width:1060px){
+  #botao{
+    left: 22.1rem;
+  }
+}
+
 #botao[type=button]{
   padding: 9.9px 50.3px;
   background-color: black;
@@ -198,6 +210,18 @@ button{
 
 }
 
+.links_num{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  bottom: 8rem;
+}
+.links_num a{
+  color: black;
+}
+
 .links a > i{
   display: flex;
   margin-left: .5rem;
@@ -226,8 +250,8 @@ span{
 /* Grid de Produtos */
 
 .grid-produto{
-  display: flex;
-  padding-top: 10rem;
+  display: block;
+  padding-top: 1rem;
   align-items: center;
   text-align: center;
 }
@@ -235,8 +259,14 @@ span{
 .grid-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 100px 250px;
-  gap: 20px;
+  padding: 208px;
+  gap: 19px;
+}
+
+@media(max-width:1060px){
+  .grid-container{
+    padding: 100px 72px;
+  }
 }
 .product{
   background-color: rgb(255, 255, 255);
@@ -271,7 +301,6 @@ div .product > p{
   display: block;
   max-width: 100%;
   box-shadow: 2px 2px 2px rgb(105, 105, 105);
-  padding-bottom: 10rem;
   background-color: #0c0c0cf8;
 }
 
