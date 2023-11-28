@@ -394,96 +394,107 @@ iframe{
 }
 
 .menu_nav ul li a{
+  display: flex;
+  align-items: center;
+  text-align: center;
   color: black;
+  gap: .5rem;
   padding: .6rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 .menu_nav ul li .cor_laranja{
   border-bottom: 4px solid #FF9548
 }
+.menu_nav i{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
+/* Comparador, Ficha, Pros, Avaliação */
 .comparador{
   display: flex;
-  padding-top: 4rem;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
-}
-
-.container_produto{
-  display: block;
-  margin-top: 2rem;
-  justify-content: center;
-  text-align: center;
-  text-align: center;
-}
-.img_pro_container{
-  display: inline-flex;
-  position: relative;
-  right: 13rem;
-  gap: 1.5rem;
-}
-.container_produto_prod{
-  display: inline-flex;
-  border: 1px solid #FF9548;
-  border-radius: 10px;
+  margin-top: 3rem;
   margin-bottom: 1rem;
-  padding: 0 230px;
-  gap: 1rem;
-  padding-bottom: 10rem;
-}
-
-.container_produto_prod a{
-  display: flex;
-  color: black;
-  position: relative;
-  align-items: center;
+  align-items: baseline;
   text-align: center;
-  top: 2rem;
+  justify-content: space-around;
 }
-
-.botao_logo{
+.comparador h1{
   display: flex;
-  position: relative;
-  left: 13rem;
-  gap: 1rem;
-}
-
-.botao_logo, .botao_logo_container{
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-
-.botao_logo_container{
-  display: flex;
-  border: 2px solid black;
-  cursor: pointer;
-  position: relative;
-  border-radius: 12px;
-  background-color: #FF9548;
-  font-weight: 900;
-  color: white;
-  padding: 1rem 4rem;
-}
-.botao_logo  img{
-  padding: 30px;
-  background-color: #c7c3c0;
-  border-radius: 40px;
-  background-image: url(../Imagens/Logo_trocafy.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 55px; 
-  background-position: center;
-}
-.botao_logo a{
-  display: flex;
-  position: relative;
-  gap: .5rem;
-}
-.container_produto_prod .money_container{
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
+
+.comparador p{
+  display: flex;
+  cursor: auto;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  gap: 1rem;
+}
+
+.comparador select{
+  display: flex;
+  border-radius: 5px;
+  height: 56px;
+  width: 290px;
+  padding-left: 1rem;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.conteudo_prod{
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  gap: 61px;
+  align-items: center;
+  text-align: center;
+}
+.conteudo_prod a{
+  color: black;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+}
+.conteudo_prod span {
+  color: #FF9548;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.conteudo_prod p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #FF9548;
+}
+.conteudo_prod h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.btn_ir a{
+  background-color: #FF9548;
+  padding: 15px 45px;
+  color: white;
+  font-weight: bold;
+}
+.btn_ir a:hover{
+  background-color: #f7a971;
+  transition: .5s;
+}
+.linha_prod{
+  display: flex;
+  width: 72%;
+  margin-bottom: 1rem;
+}
+
+
 
  /* RodaPé */
 .rodape{
@@ -551,6 +562,7 @@ hr{
   display: flex;
   justify-content: center;
   color: #ffffff;
+  text-align: center;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
